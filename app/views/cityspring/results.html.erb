@@ -1,0 +1,40 @@
+<h1>Available Child Resources near <%= @your_address %> </h1>
+<br>
+ <% if @geocode_true == -1 %> 
+ 
+ <p>Unfortunately, there are no nearby resources. Please search again.</p> 
+ 
+
+ <% elsif @geocode_true == 0 %>
+
+ <p>Unfortunately, we were unable to understand your address. Please try again</p>
+
+<% else %>
+
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Name</th>
+    <th>Provider</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>Phone Number</th>
+    
+  </tr>
+  
+  <tr>
+    <% @nyc_resources.each do |nyc_resource| %>
+      <td><%= nyc_resource.activity_type %></td>
+      <td><%= nyc_resource.facility_name %></td>
+      <td><%= nyc_resource.site_name %></td>
+      <td><%= nyc_resource.address %></td>
+      <td><%= nyc_resource.city %></td>
+      <td><%= nyc_resource.phone_number %></td>
+      
+    </tr>
+    <% end %>
+</table>
+<% end %>
+
+<p> <%= link_to 'home', cityspring_path %></p>

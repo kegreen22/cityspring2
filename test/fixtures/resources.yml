@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  activity: MyString
+  name: MyString
+  alt_name: MyString
+  agency: MyString
+  phone: MyString
+  address: MyString
+  city: MyString
+  zipcode: MyString
+  full_day: MyString
+  half_day: MyString
+  seat_capacity: 1
+  elem: MyString
+  middle: MyString
+  high: MyString
+  address_w_zip: MyString
+  day_care_type: MyString
+  day_care_status: MyString
+  notes: MyString
+  latitude: 1.5
+  longitude: 1.5
+
+two:
+  activity: MyString
+  name: MyString
+  alt_name: MyString
+  agency: MyString
+  phone: MyString
+  address: MyString
+  city: MyString
+  zipcode: MyString
+  full_day: MyString
+  half_day: MyString
+  seat_capacity: 1
+  elem: MyString
+  middle: MyString
+  high: MyString
+  address_w_zip: MyString
+  day_care_type: MyString
+  day_care_status: MyString
+  notes: MyString
+  latitude: 1.5
+  longitude: 1.5
