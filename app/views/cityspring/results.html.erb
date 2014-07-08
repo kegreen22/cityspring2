@@ -12,29 +12,31 @@
 <% else %>
 
 
-<table>
+<table id="locations">
+  <thead>
   <tr>
     <th>Type</th>
     <th>Name</th>
-    <th>Provider</th>
     <th>Address</th>
     <th>City</th>
     <th>Phone Number</th>
     
   </tr>
-  
+  </thead>
+
+<body>
   <tr>
-    <% @nyc_resources.each do |nyc_resource| %>
-      <td><%= nyc_resource.activity_type %></td>
-      <td><%= nyc_resource.facility_name %></td>
-      <td><%= nyc_resource.site_name %></td>
-      <td><%= nyc_resource.address %></td>
-      <td><%= nyc_resource.city %></td>
-      <td><%= nyc_resource.phone_number %></td>
+    <% @resources.each do |resource| %>
+      <td><%= resource.activity %></td>
+      <td><%= resource.name %></td>
+      <td><%= resource.address %></td>
+      <td><%= resource.city %></td>
+      <td><%= resource.phone %></td>
       
     </tr>
     <% end %>
+  </body>
 </table>
 <% end %>
 
-<p> <%= link_to 'home', cityspring_path %></p>
+
