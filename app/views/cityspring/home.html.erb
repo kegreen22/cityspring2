@@ -1,11 +1,11 @@
-<h1>Cityspring#home</h1>
+
 <p>Search for nearby child resources</p>
 <br>
 <%= form_tag "/cityspring/results", :method => :get do %>
   
-    <%= label_tag :search, "Enter your house number, street and city (e.g., 1600 Happygolucky Avenue, Brooklyn)" %>
+    <%= label_tag :search, "Enter your address and city (e.g., 1600 Happygolucky Avenue, Brooklyn)" %>
     
-    <%= text_field_tag :search, nil, :size => 60 %>
+    <%= text_field_tag :search, nil, :required => true, :size => 60 %>
     <%= submit_tag "Search for nearby resources", :name => nil %>
   
   <% end %>
