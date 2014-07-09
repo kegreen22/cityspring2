@@ -12,15 +12,14 @@
 <% else %>
 
 
-<table id="locations">
+<table id="locations" cellspacing="0" width="100%">
   <thead>
   <tr>
     <th>Type</th>
     <th>Name</th>
     <th>Address</th>
-    <th>City</th>
     <th>Phone Number</th>
-    
+    <th>Notes</th>
   </tr>
   </thead>
 
@@ -30,9 +29,8 @@
       <td><%= resource.activity %></td>
       <td><%= resource.name %></td>
       <td><%= resource.address %></td>
-      <td><%= resource.city %></td>
       <td><%= resource.phone %></td>
-      
+      <td><%= resource.notes %></td>
     </tr>
     <% end %>
   </body>
