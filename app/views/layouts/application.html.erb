@@ -3,13 +3,27 @@
 <head>
   <title>Cityspring</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag  'results' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   
 </head>
 <body>
+	<header>
+		
+<nav>
+	<a href="home.html.erb">CitySpring</a>
+	<a href="useful_resources.html.erb">Useful Resources</a>
+	<a href="contact_us.html.erb">Contact us</a>
+</nav>
+</header>
 
-<%= yield %>
+<%= yield %> 
 
 </body>
+<footer>
+	&copy; 2014 CitySpring
+	<br> 
+	All trademarks and registered trademarks appearing on this site are the property of their respective owners.
+	</footer>
 </html>

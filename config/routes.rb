@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   root :to => "cityspring#home"
   get 'cityspring/results' => 'cityspring#results'
   get 'cityspring/contact' => 'cityspring#contact'
+  get 'cityspring/useful_resources' => 'cityspring#useful_resources'
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
