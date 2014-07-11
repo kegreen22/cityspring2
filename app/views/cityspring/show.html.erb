@@ -1,0 +1,40 @@
+<h1>Available Child Resources near <%= @your_address %> </h1>
+<br>
+ <% if @geocode_true == -1 %> 
+ 
+ <p>Unfortunately, there are no nearby resources. Please search again.</p> 
+ 
+
+ <% elsif @geocode_true == 0 %>
+
+ <p>Unfortunately, we were unable to understand your address. Please try again</p>
+
+<% else %>
+
+
+<table id="locations" class ="table1" cellspacing="0" width="90%">
+  <thead>
+  <tr>
+    <th>Type</th>
+    <th>Name</th>
+    <th>Address (Click to open a map)</th>
+    <th>Phone Number</th>
+    <th>Notes</th>
+  </tr>
+  </thead>
+
+<body>
+  <tr>
+    <% @resources.each do |resource| %>
+      <td><%= resource.activity %></td>
+      <td><%= resource.name %></td>
+      <td><%= link_to resource.address, resource.address_w_zip, target: "_blank" %></td>
+      <td><%= resource.phone %></td>
+      <td><%= resource.notes %></td>
+    </tr>
+    <% end %>
+  </body>
+</table>
+<% end %>
+
+

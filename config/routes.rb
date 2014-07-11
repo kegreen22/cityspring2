@@ -3,13 +3,16 @@ Rails.application.routes.draw do
  # get 'cityspring/results', to: :results
  # get 'cityspring/contact' to: :contact
   root :to => "cityspring#home"
-  get 'cityspring/results' => 'cityspring#results'
-  get 'cityspring/contact' => 'cityspring#contact'
-  get 'cityspring/useful_resources' => 'cityspring#useful_resources'
-  
+
+  get 'home', to: "cityspring#home"
+  get 'results' => 'cityspring#results'
+  get 'contact_us' => 'cityspring#contact_us'
+  get 'useful_resources' => 'cityspring#useful_resources'
+  resources :cityspring
+  # match "/cityspring/home" => "cityspring#home"
 
   # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+  # See how all your routes lay out with  routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
