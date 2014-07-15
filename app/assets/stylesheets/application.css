@@ -17,4 +17,6 @@
  */
 
 
-footer {text-align: center; margin: 0px 10px 10px 10px; font-size: 80%}
+footer {text-align: center; font-size: 80%; margin: 0px 10px 10px 10px} 
+IMG.home_image { display: block; margin-left: auto; margin-right: auto}
+P.intro_text {display: block}
