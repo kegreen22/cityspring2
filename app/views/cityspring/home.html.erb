@@ -3,15 +3,19 @@
 <%= image_tag "teacher_class.jpg", alt: "Teacher with class", class: "home_image"%>
 <br>
 <br>
-<p class="intro_text">Search for nearby child resources</p>
-<br>
+<p class="intro_text">Search for nearby child resources in NYC (e.g., day care, after-school, etc.)</p>
+
+<h3 class="search_label">
 <%= form_tag "/cityspring/results", :method => :get do %>
   
-    <%= label_tag :search, "Enter your address and city (e.g., 1600 Happygolucky Avenue, Brooklyn)" %>
+    <%= label_tag :search, "Enter your address and city" %>
     
     <%= text_field_tag :search, nil, :required => true, :size => 60 %>
     <%= submit_tag "Search for nearby resources", :name => nil %>
-  
+  </h3>
   <% end %>
+<br>
+<br>
+<br>
 <br>
 <br>

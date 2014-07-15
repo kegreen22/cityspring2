@@ -1,3 +1,24 @@
+<%= link_to "Contact Us", controller: "cityspring", action: "contact_us" %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
  * Table styles
  */

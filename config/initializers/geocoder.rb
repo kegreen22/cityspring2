@@ -9,7 +9,7 @@ Geocoder.configure(
       :api_key => "AkCFUIHpL0aDgQvmmK1aHsx51iY_Q5eWUF6u0FXaiwdtd9QK0Hq5D5FR16pEaNg7",
 
       # geocoding service timeout (secs)
-      :timeout => 8,
+      :timeout => 12,
 
       # ISO-639 language code
       # [:language, :en],

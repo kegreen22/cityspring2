@@ -3,6 +3,10 @@ class CityspringController < ApplicationController
     render "home"
   end
 
+  def index
+    render "home"
+  end
+
 def results 
    if params[:search].present? #only capture parameters if something has been entered
          puts params[:search]
