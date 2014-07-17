@@ -6,7 +6,7 @@
 <p class="intro_text">Search for nearby child resources in NYC (e.g., day care, after-school, etc.)</p>
 
 <h3 class="search_label">
-<%= form_tag "/cityspring/results", :method => :get do %>
+<%= form_tag "results", :method => :get do %>
   
     <%= label_tag :search, "Enter your address and city" %>
     
@@ -17,5 +17,9 @@
 <br>
 <br>
 <br>
+
+<p class="cbo">If you are a community organization and would like to be included in this directory click 
+	<%= link_to "here.", controller: "cityspring", action: "new" %></p>
+
 <br>
 <br>

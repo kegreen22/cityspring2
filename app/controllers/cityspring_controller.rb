@@ -3,6 +3,12 @@ class CityspringController < ApplicationController
     render "home"
   end
 
+def new
+
+
+
+end
+
   def index
     render "home"
   end
