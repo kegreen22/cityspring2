@@ -1,6 +1,49 @@
 <%= link_to "Contact Us", controller: "cityspring", action: "contact_us" %>
 
-
+<p>
+  <%= form_for controller: 'cbo', :action => 'cbo_signup' do %>
+  <%= f.label :orgname %><br>
+  <%= f.text_field :orgname %>
+</p>
+<p>
+<%= f.label :contactname %> <br>
+<%= f.text_field :contactname %>
+</p>
+<p>
+  <%= f.label :address %><br>
+  <%= f.text_field :address %>
+</p>
+p>
+  <%= f.label :city %><br>
+  <%= f.text_field :city %>
+</p>
+p>
+  <%= f.label :zipcode %><br>
+  <%= f.text_field :zipcode %>
+</p>
+p>
+  <%= f.label :phone %><br>
+  <%= f.text_field :phone %>
+</p>
+p>
+  <%= f.label :programtype %><br>
+  <%= f.text_field :programtype %>
+</p>
+p>
+  <%= f.label :ages %><br>
+  <%= f.text_field :ages %>
+</p>
+p>
+  <%= f.label :activities %><br>
+  <%= f.text_field :activities %>
+</p>
+p>
+  <%= f.label :notes %><br>
+  <%= f.text_field :notes %>
+</p>
+<p>
+  <%= f.submit %>
+</p>
 
 
 
