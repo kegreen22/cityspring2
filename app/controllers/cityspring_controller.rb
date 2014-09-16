@@ -1,23 +1,17 @@
 class CityspringController < ApplicationController
-  def home
+  def home #show home page
     render "home"
   end
 
-def new
-
-
-
-end
-
-  def index
+  def index #show home page
     render "home"
   end
 
-def results 
+def results #current controller for results
    if params[:search].present? #only capture parameters if something has been entered
          puts params[:search]
          @your_address = params[:search]
-     @resources = Resource.near(params[:search], 1, :order => :activity) #use the geocoded address to search the database for nearby locations
+     @resources = Resource.near(params[:search], 1, :order => :activity) #use the geocoded address to search the database for locations w/i 1 mile
      if Resource.geocoded #checking to see that the user input has been geocoded
       puts "geocoded"
       @geocode_true = 1
@@ -37,7 +31,7 @@ def results
    end
 end
 
-def show
+def show #original controller for view
 if params[:search].present? #only capture parameters if something has been entered
          puts params[:search]
          @your_address = params[:search]
@@ -63,11 +57,11 @@ if params[:search].present? #only capture parameters if something has been enter
 
 end
 
-def useful_resources
+def useful_resources #show other nyc agencies and resources for children
   render "useful_resources"
   end
 
-  def contact_us
+  def contact_us #page for contacting web developer
     render "contact_us"
   end
 
