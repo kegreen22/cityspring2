@@ -16,8 +16,10 @@
  *= require results
  */
 
+.head_title{text-align: center; background-color: white;}
+div.nav{margin-right: auto; }
 .center{margin-left: auto; margin-right: auto; width: 85%}
-footer {text-align: center; font-size: 80%; margin: 0px 10px 10px 10px} 
+footer {text-align: center; height: 50px; bottom: 150px; position: auto; font-size: 80%;} 
 IMG.home_image { display: block; margin-left: auto; margin-right: auto}
 P.intro_text {display: block; text-align:center; font-size: 125%}
 h3.search_label {text-align: center}

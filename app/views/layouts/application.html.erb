@@ -10,18 +10,26 @@
 </head>
 <body>
 	<header>
-		<%= image_tag "CitySpring_logo2.png" %><br>
-		<%= image_tag "CitySpring_bar.png" %>
+	<!--	<%= image_tag "CitySpring_logo2.png" %><br> -->
+		<!-- <%= image_tag "CitySpring_bar.png" %> -->
 		<br>
+
 <nav>
-	<h1>
-	<%= link_to "Home", controller: "cityspring", action: "home" %>
-	<%= link_to "Useful Resources", controller: "cityspring", action: "useful_resources" %>
-	
+	<h1>	
 </h1>
 </nav>
 </header>
+<div class="head_title">
+	<%= link_to (image_tag "CitySpring_logo2.png", alt: "Logo"), controller: "cityspring", action: "home" %>
+<!-- <%= link_to "Cityspring", controller: "cityspring", action: "home" %> -->
+</div>
 
+<div class="addl_nav">
+	
+<!--	<%= link_to "Useful Resources", controller: "cityspring", action: "useful_resources" %> -->
+	</div>
+<div class="spacer1">
+</div>
 <%= yield %>
 <br>
 
@@ -29,9 +37,9 @@
 <br>
 <br>
 <br>
-<footer>
+<!-- <footer>
 	&copy; 2014 CitySpring
 <br>
 	All trademarks and registered trademarks appearing on this site are the property of their respective owners.
-	</footer>
+	</footer> -->
 </html>
