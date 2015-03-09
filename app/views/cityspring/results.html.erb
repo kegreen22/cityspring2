@@ -1,16 +1,6 @@
 <h1 id="results_heading">Available Child Resources near: <%= @your_address %> </h1>
 <br>
- <% if @geocode_true == -1 %> 
  
- <h3>
- <p class="nothing_nearby">Unfortunately, there are no nearby resources. Please search again.</p> 
- </h3>
-
- <% elsif @geocode_true == 0 %>
-<h3>
- <p class="not_understood">Unfortunately, we were unable to understand your address. Please try again</p>
-</h3>
-<% else %>
 
 
 <table id="locations" class ="table1" cellspacing="0" width="100%">
@@ -37,6 +27,6 @@
   </body>
 </table>
 
-<% end %>
+
 
 

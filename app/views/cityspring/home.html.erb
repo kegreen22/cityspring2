@@ -1,6 +1,8 @@
 <br>
 <br>
-<!-- <%= image_tag "teacher_class.jpg", alt: "Teacher with class", class: "home_image"%> -->
+<% if flash[:error] %>
+    <div class="error"><%= flash[:error] %></div>
+  <% end %>
 <br>
 <br>
 <p class="intro_text">Search for nearby child resources in NYC (e.g., day care, after-school, etc.)</p>

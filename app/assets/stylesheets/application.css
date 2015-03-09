@@ -25,3 +25,4 @@ P.intro_text {display: block; text-align:center; font-size: 125%}
 h3.search_label {text-align: center}
 p.cbo {text-align: center}
 .footer {position: fixed; bottom: 5px; width: 100%; height: 40px; text-align: center;}
+.error {text-align: center; color: red; font-size: 125%}
