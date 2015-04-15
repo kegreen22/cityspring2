@@ -5,7 +5,9 @@
   <% end %>
 <br>
 <br>
-<p class="intro_text">Search for nearby child resources in NYC (e.g., day care, after-school, etc.)</p>
+<div class="space">
+	</div>
+<div class="intro_text">Search for nearby child resources in NYC (e.g., day care, after-school, etc.)</p>
 
 <h3 class="search_label">
 <%= form_tag "results", :method => :get do %>
@@ -15,6 +17,7 @@
     <%= text_field_tag :search, nil, :required => true, :size => 60 %>
     <%= submit_tag "Search for nearby resources", :name => nil %>
   </h3>
+</div>
   <% end %>
 <br>
 <br>
