@@ -16,6 +16,7 @@ def results # current controller for results
      # puts "geocoded"
       @geocode_true = 1
       # puts @geocode_true
+      render layout: "results"
     else      
       # puts "not geocoded"  # if user input was not geocoded then note that fact
       @geocode_true = 0
