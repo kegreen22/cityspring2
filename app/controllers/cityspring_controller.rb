@@ -24,7 +24,7 @@ def results # current controller for results
       # puts @geocode_true
      end
 
-     if @resources.empty? # note if that the user input was geocoded but was not near any resources in the database
+     if @resources.empty? # if the user input was geocoded but was not near any resources in the database
        # puts "no results"
        @geocode_true = -1
        redirect_to root_url, flash: {error: "Sorry, but there are no NYC resources within one mile of your address. Please enter another address."}

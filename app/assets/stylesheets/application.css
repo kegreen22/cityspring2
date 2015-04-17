@@ -28,6 +28,6 @@ p.cbo {text-align: center}
 .footer {position: fixed; bottom: 5px; width: 100%; height: 40px; text-align: center;}
 .error {text-align: center; color: yellow; font-size: 150%}
 body {
-	background-image: url("basic_sky.jpg");
-	background-size: cover;
+  background-image: url("basic_sky1.png");
+  background-size: cover;
 }
