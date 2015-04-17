@@ -26,8 +26,8 @@ IMG.home_image { display: block; margin-left: auto; margin-right: auto}
 h3.search_label {text-align: center}
 p.cbo {text-align: center}
 .footer {position: fixed; bottom: 5px; width: 100%; height: 40px; text-align: center;}
-.error {text-align: center; color: red; font-size: 125%}
+.error {text-align: center; color: yellow; font-size: 150%}
 body {
-	background-image: url("city_view1.jpg");
+	background-image: url("basic_sky.jpg");
 	background-size: cover;
 }
