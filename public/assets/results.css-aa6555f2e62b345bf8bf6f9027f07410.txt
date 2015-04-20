@@ -1,0 +1,8 @@
+// Place all the styles related to the cityspring controller here -- results view
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// This is for the results view -- the datalocations using jquery
+body {
+	background-image: url("basic_sky.jpg");
+	background-size: cover;
+}
