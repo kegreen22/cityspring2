@@ -1,0 +1,72 @@
+/* line 6, /home/keith/rails-projects/cityspring/app/assets/stylesheets/results.css.scss */
+.head_title {
+  text-align: center;
+  background-color: white;
+}
+
+/* line 7, /home/keith/rails-projects/cityspring/app/assets/stylesheets/results.css.scss */
+div.nav {
+  margin-right: auto;
+}
+
+/* line 8, /home/keith/rails-projects/cityspring/app/assets/stylesheets/results.css.scss */
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+/* line 9, /home/keith/rails-projects/cityspring/app/assets/stylesheets/results.css.scss */
+footer {
+  text-align: center;
+  height: 50px;
+  bottom: 150px;
+  position: auto;
+  font-size: 80%;
+}
+
+/* line 10, /home/keith/rails-projects/cityspring/app/assets/stylesheets/results.css.scss */
+.space {
+  height: 150px;
+}
+
+/* line 11, /home/keith/rails-projects/cityspring/app/assets/stylesheets/results.css.scss */
+IMG.home_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 12, /home/keith/rails-projects/cityspring/app/assets/stylesheets/results.css.scss */
+.intro_text {
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: 200%;
+}
+
+/* line 13, /home/keith/rails-projects/cityspring/app/assets/stylesheets/results.css.scss */
+h3.search_label {
+  text-align: center;
+}
+
+/* line 14, /home/keith/rails-projects/cityspring/app/assets/stylesheets/results.css.scss */
+p.cbo {
+  text-align: center;
+}
+
+/* line 15, /home/keith/rails-projects/cityspring/app/assets/stylesheets/results.css.scss */
+.footer {
+  position: fixed;
+  bottom: 5px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+
+/* line 16, /home/keith/rails-projects/cityspring/app/assets/stylesheets/results.css.scss */
+.error {
+  text-align: center;
+  color: red;
+  font-size: 125%;
+}
